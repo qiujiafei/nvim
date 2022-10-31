@@ -46,6 +46,10 @@ return packer.startup(function(use)
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
 
+	use("lukas-reineke/indent-blankline.nvim")
+	-- bufferline
+	use({ "akinsho/bufferline.nvim", tag = "v3.*" })
+
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
 
@@ -103,4 +107,3 @@ return packer.startup(function(use)
 		require("packer").sync()
 	end
 end)
-
