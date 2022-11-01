@@ -216,6 +216,11 @@ _G.packer_plugins = {
     path = "/Users/gaffey/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tmux-navigate"] = {
+    loaded = true,
+    path = "/Users/gaffey/.local/share/nvim/site/pack/packer/start/tmux-navigate",
+    url = "https://github.com/sunaku/tmux-navigate"
+  },
   ["typescript.nvim"] = {
     loaded = true,
     path = "/Users/gaffey/.local/share/nvim/site/pack/packer/start/typescript.nvim",
