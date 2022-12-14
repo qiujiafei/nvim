@@ -14,4 +14,7 @@
   `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
   
 4. 安装 cli 工具  
-  `cargo install ripgrep`
+    ```
+    cargo install ripgrep
+    cargo install tree-sitter-cli
+    ```
