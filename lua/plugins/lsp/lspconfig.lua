@@ -20,6 +20,10 @@ local keymap = vim.keymap -- for conciseness
 
 -- enable keybinds only for when lsp server available
 local on_attach = function(client, bufnr)
+	-- 禁用格式化功能，交给专门插件插件处理
+	client.server_capabilities.document_formatting = false
+	client.server_capabilities.document_range_formatting = false
+
 	-- keybind options
 	local opts = { noremap = true, silent = true, buffer = bufnr }
 
@@ -35,6 +39,7 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "ge", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to previous diagnostic in buffer keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
 	keymap.set("n", "gh", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
 	keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
+	keymap.set("n", "<leader>fm", "<cmd>lua vim.lsp.buf.format()<CR>", opts) -- see outline on right hand side
 
 	keymap.set("n", "<A-d>", "<cmd>Lspsaga open_floaterm<CR>", opts) -- Float terminal
 	keymap.set("t", "<A-d>", [[<C-\><C-n><cmd>Lspsaga close_floaterm<CR>]], { silent = true }) -- close float terminal
