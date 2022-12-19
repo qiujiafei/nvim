@@ -61,3 +61,6 @@ keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if ne
 -- Ctrl + / 注释
 vim.api.nvim_set_keymap("n", "<C-_>", "gcc", { noremap = false })
 vim.api.nvim_set_keymap("v", "<C-_>", "gcc", { noremap = false })
+
+-- toggle
+keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<CR>")
