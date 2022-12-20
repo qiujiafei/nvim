@@ -39,6 +39,11 @@ return packer.startup(function(use)
 
 	-- use("szw/vim-maximizer") -- maximizes and restores current window
 
+	-- dashboard
+	use("glepnir/dashboard-nvim")
+
+	-- project
+	use("ahmedkhalf/project.nvim")
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	--	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)

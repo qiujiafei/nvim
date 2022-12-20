@@ -6,6 +6,8 @@ require("core.keymaps")
 require("core.colorscheme")
 
 require("plugins.comment")
+require("plugins.project")
+require("plugins.dashboard")
 require("plugins.nvim-tree")
 require("plugins.lualine")
 require("plugins.toggleterm")
