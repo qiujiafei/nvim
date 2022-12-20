@@ -8,6 +8,8 @@ require("core.colorscheme")
 require("plugins.comment")
 require("plugins.project")
 require("plugins.dashboard")
+require("plugins.lastplace")
+
 require("plugins.nvim-tree")
 require("plugins.lualine")
 require("plugins.toggleterm")
