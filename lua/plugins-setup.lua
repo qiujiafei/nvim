@@ -89,6 +89,8 @@ return packer.startup(function(use)
 	use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
 	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
 
+	use("edluffy/specs.nvim") -- 跳转时光标提示
+
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- easily configure language servers
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
