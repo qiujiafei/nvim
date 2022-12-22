@@ -90,6 +90,8 @@ return packer.startup(function(use)
 	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
 
 	use("edluffy/specs.nvim") -- 跳转时光标提示
+	use("RRethy/vim-illuminate") --
+	use("romainl/vim-cool") --
 
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- easily configure language servers

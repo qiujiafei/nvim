@@ -10,6 +10,7 @@ require("plugins.project")
 require("plugins.dashboard")
 require("plugins.lastplace")
 require("plugins.specs")
+require("plugins.illuminate")
 
 require("plugins.nvim-tree")
 require("plugins.lualine")
