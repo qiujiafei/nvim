@@ -1,6 +1,6 @@
 require("plugins-setup")
 require("autocmds")
-
+-- basic
 require("core.options")
 require("core.keymaps")
 require("core.colorscheme")
@@ -21,6 +21,7 @@ require("plugins.gitsigns")
 require("plugins.bufferline")
 require("plugins.blackline")
 
+-- lsp
 require("plugins.lsp.mason")
 require("plugins.lsp.lspsaga")
 require("plugins.lsp.lspconfig")
