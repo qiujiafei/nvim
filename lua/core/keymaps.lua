@@ -2,6 +2,10 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
+local opt = {
+	noremap = true,
+	silent = true,
+}
 
 ---------------------
 -- General Keymaps
@@ -30,6 +34,10 @@ keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tc", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
+
+-- 上下移动选中文本
+keymap.set("v", "J", ":move '>+1<CR>gv-gv", opt)
+keymap.set("v", "K", ":move '<-2<CR>gv-gv", opt)
 
 ----------------------
 -- Plugin Keybinds
