@@ -42,6 +42,9 @@ return packer.startup(function(use)
 	-- dashboard
 	use("glepnir/dashboard-nvim")
 
+	-- close buffer
+	use("Asheq/close-buffers")
+
 	-- project
 	use("ahmedkhalf/project.nvim")
 

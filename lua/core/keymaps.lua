@@ -35,6 +35,10 @@ keymap.set("n", "<leader>tc", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
+keymap.set("n", "<C-l>", ":BufferLineCycleNext<CR>") -- go to next buffer
+keymap.set("n", "<C-h>", ":BufferLineCyclePrev<CR>") -- go to next buffer
+keymap.set("n", "<C-w>", ":Bdelete!<CR>", opt) -- go to next buffer
+
 -- 上下移动选中文本
 keymap.set("v", "J", ":move '>+1<CR>gv-gv", opt)
 keymap.set("v", "K", ":move '<-2<CR>gv-gv", opt)
